@@ -1,5 +1,5 @@
 URL shortener:
-This project is a URL shortener which was made with Java and spring Boot and Spring Redis Data as framework.
+This project is a URL shortener which was made with the programming language Java and spring Boot and Spring Redis Data as framework.
 
 When a url link is Posted on Postman (the computer application used for testing API’s), an hashed URL id is generated which will be the new link.
 

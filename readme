@@ -1,0 +1,19 @@
+URL shortener:
+This project is a URL shortener which was made with Java and spring Boot and Spring Redis Data as framework.
+
+When a url link is Posted on Postman (the computer application used for testing API’s), an hashed URL id is generated which will be the new link.
+
+Before POSTING/GETTING the specific url to postman, we need to open Redis server, otherwise it won’t work.
+
+In order to post the url we need to select «POST» and write the server port number which the Spring Boot application is run on, in this case:
+http://localhost:8081/rest/url
+
+
+Then we need to write the specific url we want to shorten and hash in the Body and select raw.  In this case we want to shorten the facebook url:
+https://www.facebook.com/
+
+When this is done, the new generated id url for facebook will be: ca2c5aeb
+
+In order to retrieve it, we can follow the same steps as above but instead select «GET», and in the http we write the local host as above but with the new generated  id url:
+http://localhost:8081/rest/url/ca2c5aeb
+Then we will get: https://www.facebook.com/
